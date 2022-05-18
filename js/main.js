@@ -1,6 +1,15 @@
 (function ($) {
     "use strict";
+    $(document).ready(function () {
+        $("#download").click(function (e) {
+            //Descargar el pdf
+            e.preventDefault();
+            var win = window.open("/../CV_VictorMerchanVentura.pdf", '_blank');
+            win.focus();
 
+            
+        });
+  });
     // Navbar on scrolling
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
