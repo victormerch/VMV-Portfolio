@@ -59,9 +59,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #6c757d;
+  color: #ffffff;
   text-align: left;
-  background-color: #ffffff;
+  background-color: #161616;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -152,7 +152,7 @@ sup {
 }
 
 a {
-  color: #58B4F5 ;
+  color: green ;
   text-decoration: none;
   background-color: transparent;
 }
@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  color: #343a40;
+  color: green;
 }
 
 h1, .h1 {
@@ -1883,7 +1883,7 @@ pre code {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: black;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -1908,8 +1908,8 @@ pre code {
 
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
-  border-color: #62f7df;
+  background-color: black;
+  border-color: green;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(11, 206, 175, 0.25);
 }
@@ -2593,8 +2593,8 @@ fieldset:disabled a.btn {
 
 .btn-light {
   color: #212529;
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: green;
+  border-color: black;
 }
 
 .btn-light:hover {
@@ -2666,14 +2666,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #58B4F5 ;
-  border-color: #58B4F5 ;
+  color: green ;
+  border-color: green ;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #58B4F5 ;
-  border-color: #58B4F5 ;
+  background-color: green ;
+  border-color: green ;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -2688,8 +2688,8 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #58B4F5 ;
-  border-color: #58B4F5 ;
+  background-color: green ;
+  border-color: green ;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
@@ -2858,14 +2858,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: green;
+  border-color: green;
 }
 
 .btn-outline-light:hover {
   color: #212529;
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: green;
+  border-color: black;
 }
 
 .btn-outline-light:focus, .btn-outline-light.focus {
@@ -6355,7 +6355,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #58B4F5 !important;
+  background-color: black !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6415,7 +6415,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #ffffff !important;
+  background-color: black !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -7499,7 +7499,7 @@ button.bg-dark:focus {
 }
 
 .shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0.125rem 0.25rem green !important;
 }
 
 .shadow {
@@ -7528,7 +7528,7 @@ button.bg-dark:focus {
 
 .w-100 {
   width: 100% !important;
-  border: 10px solid white;
+  border: 10px solid green;
 }
 
 .w-auto {
@@ -9522,15 +9522,15 @@ button.bg-dark:focus {
 }
 
 .text-white {
-  color: #fff !important;
+  color: green !important;
 }
 
 .text-primary {
-  color: #58B4F5 !important;
+  color: white !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #078571 !important;
+  color: black !important;
 }
 
 .text-secondary {
@@ -9804,7 +9804,7 @@ h6,
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #58B4F5 ;
+  color: green ;
 }
 
 @media (max-width: 991.98px) {
