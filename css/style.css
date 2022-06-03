@@ -5151,7 +5151,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   overflow: hidden;
   line-height: 0;
   font-size: 0.75rem;
-  background-color: #e9ecef;
+  background-color: grey;
   border-radius: 0.25rem;
 }
 
@@ -6427,6 +6427,22 @@ button.bg-light:focus {
 .bg-dark {
   background-color: #343a40 !important;
 }
+.bg-green {
+  background-color: green !important;
+}
+.bg-green2 {
+  background-color: greenyellow !important;
+}
+.bg-purple {
+  background-color: purple !important;
+}
+.bg-orange {
+  background-color: orange !important;
+}
+.bg-blue {
+  background-color: blue !important;
+}
+
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
@@ -6483,7 +6499,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #0BCEAF !important;
+  border-color: green !important;
 }
 
 .border-secondary {

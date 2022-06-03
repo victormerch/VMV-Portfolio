@@ -10,13 +10,13 @@ $(function () {
             var email = $("input#email").val();
             var subject = $("input#subject").val();
             var message = $("textarea#message").val();
-
+            console.log(name);
             $this = $("#sendMessageButton");
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "contact.php",
-                type: "POST",
+                url: "mail/contact.php",
+                type: "GET",
                 data: {
                     name: name,
                     email: email,
