@@ -9540,6 +9540,9 @@ button.bg-dark:focus {
 .text-white {
   color: green !important;
 }
+.text-special {
+  color: #161616 !important;
+}
 
 .text-primary {
   color: white !important;
