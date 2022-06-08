@@ -42,6 +42,4 @@ app.get('/sendEmail', (req, res) => {
   });
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+app.listen(PORT, () => console.log(`Listening on https://localhost:${ PORT }`));
