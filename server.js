@@ -37,6 +37,7 @@ app.get('/sendEmail', (req, res) => {
     } else {
       console.log('Email sent: ' + info.response);
       res.send(true)
+      
     }
     
   });
