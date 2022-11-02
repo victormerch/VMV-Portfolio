@@ -1,3 +1,17 @@
 # VMV-Portafolio
 
-https://www.free-css.com/free-css-templates/page278/freefolio
+## Descripción
+Pagina web pesonal de Victor Merchan Ventura, donde publico mis proyectos, habilidades y experiencia.
+
+## Tecnologías
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+* jQuery
+* NodeJS
+* MongoDB
+
+## Sitio web
+https://victor-merchan.herokuapp.com/
+
