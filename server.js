@@ -1,8 +1,12 @@
 const express = require('express')
 const path = require('path');
 var nodemailer = require('nodemailer');
+var MongoClient = require('mongodb').MongoClient;
+
 const app = express()
 const PORT  = process.env.PORT || 5000
+
+
 app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
@@ -14,33 +18,30 @@ app.get('/sendEmail', (req, res) => {
   var email = req.query.email;
   var subject = req.query.subject;
   var message = req.query.message;
-
-  var transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'vmerchandeveloper@gmail.com',
-      pass: 'wAJqF$@hZedu'
-    }
-  });
-  
-  var mailOptions = {
-    from: 'vmerchandeveloper@gmail.com',
-    to: 'vmerchandeveloper@gmail.com',
-    subject: subject,
-    text: 'Name: '+name+'\nEmail: '+email+'\nMessage: '+message
+ 
+  var dataEmail = {
+    'from': email,
+    'subject': subject,
+    'text': message
   };
+  sendEmail(dataEmail)
+
+  res.send(true)
   
-  transporter.sendMail(mailOptions, function(error, info){
-    if (error) {
-      console.log(error);
-      res.send(false);
-    } else {
-      console.log('Email sent: ' + info.response);
-      res.send(true)
-      
-    }
-    
-  });
 })
 
 app.listen(PORT, () => console.log(`Listening on https://localhost:${ PORT }`));
+
+
+function sendEmail(data){
+
+  MongoClient.connect('mongodb+srv://victor:CCsEZu5jugVtfMnq@cluster0.vudsg.mongodb.net/?retryWrites=true&w=majority', async function (err, client) {
+
+        if (err) throw err;
+    
+        var db = client.db('Portfolio');
+        
+        await db.collection('Message').insertOne(data);
+        
+    })
+}
