@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/victormerch/VMV-Portafolio#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "mongodb": "^4.11.0",
     "mongoose": "^6.7.2",

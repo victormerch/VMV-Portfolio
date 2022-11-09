@@ -1,4 +1,5 @@
 const express = require('express')
+require('dotenv').config()
 const path = require('path');
 var nodemailer = require('nodemailer');
 var MongoClient = require('mongodb').MongoClient;
@@ -35,7 +36,7 @@ app.listen(PORT, () => console.log(`Listening on https://localhost:${ PORT }`));
 
 function sendEmail(data){
 
-  MongoClient.connect('mongodb+srv://victor:CCsEZu5jugVtfMnq@cluster0.vudsg.mongodb.net/?retryWrites=true&w=majority', async function (err, client) {
+  MongoClient.connect(process.env.MONGO_STRING, async function (err, client) {
 
         if (err) throw err;
     
