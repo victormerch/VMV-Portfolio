@@ -346,7 +346,6 @@
                         <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Web</li>
                         <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Desktop</li>
                         <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Apps</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".fourth">VideoGames</li>
                     </ul>
                 </div>
             </div>
@@ -381,16 +380,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second fourth">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/BattleSimulator.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/BattleSimulator.png" data-lightbox="portfolio">
-                                <a href="https://github.com/victormerch/Proyecto-Final-AMS1" class="fa fa-plus text-white" style="font-size: 60px;text-decoration: none;"></a>
-                            </a>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third second">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/kadamm.png" alt="">
@@ -407,16 +396,6 @@
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                             <a href="img/loginExample.png" data-lightbox="portfolio">
                                 <a href="https://github.com/victormerch/LoginExample" class="fa fa-plus text-white" style="font-size: 60px; text-decoration: none;"></a>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third fourth">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/DropGame.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/DropGame.png" data-lightbox="portfolio">
-                                <a href="https://github.com/victormerch/DropGame" class="fa fa-plus text-white" style="font-size: 60px; text-decoration: none;"></a>
                             </a>
                         </div>
                     </div>
@@ -438,26 +417,26 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form action="https://formsubmit.co/1Victormerch@gmail.com" method="POST">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Tu nombre"
+                                    <input type="text" class="form-control p-4" id="name" name="name"  placeholder="Tu nombre"
                                         required="required" data-validation-required-message="*" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Tu email"
+                                    <input type="email" class="form-control p-4" id="email" name="email" placeholder="Tu email"
                                         required="required" data-validation-required-message="*" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Asunto"
+                                <input type="text" class="form-control p-4" id="subject" name="subject" placeholder="Asunto"
                                     required="required" data-validation-required-message="*" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Mensaje"
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" name="message" placeholder="Mensaje"
                                     required="required"
                                     data-validation-required-message="*"></textarea>
                                 <p class="help-block text-danger"></p>
