@@ -10,4 +10,3 @@ Pagina web pesonal de Victor Merchan Ventura, donde publico mis proyectos, habil
 
 ## Sitio web
 https://victor-merchan.herokuapp.com/
-
